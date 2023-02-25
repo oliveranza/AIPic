@@ -1,0 +1,106 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "oliveranza",
+      "Nome": "Oliver",
+      "sobrenome": "Ranza",
+      "email": "oliverzanza@gmail.com",
+      "senha": "123456"
+    },
+    {
+      "id": "2",
+      "username": "sylvaneide",
+      "Nome": "Maria",
+      "sobrenome": "Silvaneide",
+      "email": "sylvaneidea@gmail.com",
+      "senha": "123456"
+    }
+  ],
+  "photos": [
+    {
+      "id": 1,
+      "url": "https://img.freepik.com/fotos-premium/leao-signo-do-zodiaco-simbolo-do-horoscopo-astrologia-magica-leao-na-fantastica-ilustracao-de-ia-generativa-do-ceu-noturno_162695-4517.jpg",
+      "description": "leão",
+      "owner": "oliveranza",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "url": "https://www.shutterstock.com/image-vector/hand-drawn-portrait-cute-lioness-260nw-1038999445.jpg",
+      "description": "leoa",
+      "owner": "sylvaneide",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "url": "https://imagecache.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d724b9dd-13b3-4a39-465f-ece564f58a00/width=400",
+      "description": "fantasy-cat",
+      "owner": "oliveranza",
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "url": "https://imagecache.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/63f29bc8-33c9-4727-a9d1-17b08eea8700/width=400",
+      "description": "woman-riding-a-horse",
+      "owner": "oliveranza",
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "url": "https://imagecache.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/ef13d6a6-8acc-4fa0-c3c5-ec2b768afa00/width=400",
+      "description": "water-girl",
+      "owner": "oliveranza",
+      "userId": 2
+    },
+    {
+      "id": 6,
+      "url": "https://imagecache.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/11b02035-6fae-44c0-0a29-a32b2ad1bf00/width=400",
+      "description": "girl-and-bird",
+      "owner": "oliveranza",
+      "userId": 2
+    },
+    {
+      "id": 7,
+      "url": "https://imagecache.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/0ee587e1-9323-45ae-6638-1a86855b9300/width=400",
+      "description": "beaultiful-hair",
+      "owner": "sylvaneide",
+      "userId": 2
+    },
+    {
+      "id": 8,
+      "url": "https://imagecache.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/41fc570b-4b2e-42c9-7018-84056068b300/width=400",
+      "description": "colorful-hair",
+      "owner": "sylvaneide",
+      "userId": 2
+    },
+    {
+      "id": 9,
+      "url": "https://imagecache.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/ca06a036-f07c-4bf2-e204-7783cf5a7c00/width=400",
+      "description": "princess",
+      "owner": "oliveranza",
+      "userId": 2
+    },
+    {
+      "id": 10,
+      "url": "https://imagecache.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/d25b6c0e-8360-4496-c921-41106026ea00/width=400",
+      "description": "warrior",
+      "owner": "oliveranza",
+      "userId": 2
+    },
+    {
+      "id": 11,
+      "url": "https://imagecache.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/5e30ab78-beeb-4806-6e98-1661c271d100/width=400",
+      "description": "woman",
+      "owner": "sylvaneide",
+      "userId": 2
+    },
+    {
+      "id": 12,
+      "url": "https://imagecache.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/973a1baf-5772-4018-a752-812ecf944800/width=400",
+      "description": "girl",
+      "owner": "sylvaneide",
+      "userId": 2
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "/photos/all":"/photos",
+  "/users/:id/photos":"/photos?userId=:id",
+  "/photos/:username/":"/photos?owner=:username"
+}
