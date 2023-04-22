@@ -1,11 +1,15 @@
 <div class="text-center mt-3 mb-3">
-  <form>
-    <input
-      class="rounded"
-      type="search"
-      placeholder="Search..."
-      autofocus
-      (keyup)="filtrar($event)">
-  </form>
+    <form>
+        <input
+            class="rounded"
+            type="search"
+            placeholder="Search..."
+            autofocus
+            (keyup)="debounceAndFilter($event)"
+        />
+    </form>
 </div>
-<mp-photo-row [photos]="photosList"></mp-photo-row>
+
+<mp-photo-row [photos]="photosList | FilterByDescription : filterText"> </mp-photo-row>
+
+<mp-load-button (click)="loadMore()" [hasMore]="hasMore"></mp-load-button>

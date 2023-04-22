@@ -1,5 +1,7 @@
 {
-  "/photos/all":"/photos",
+  "/all/photos":"/photos",
+  "/all/photos?page=:page":"/photos?_page=:page&_limit=3",
   "/users/:id/photos":"/photos?userId=:id",
-  "/photos/:username/":"/photos?owner=:username"
+  "/:username/photos":"/photos?owner=:username",
+  "/:username/photos?page=:page":"/photos?owner=:username&_page=:page&_limit=3"
 }
