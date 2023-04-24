@@ -1,10 +1,11 @@
+<p class="text-center text-muted" *ngIf="!photos.length">
+    Sorry! No photos were found with this description.
+</p>
+
 <ol class="list-unstyled">
-  <li class="row" *ngFor="let cols of rows">
-    <div class="col-4" *ngFor="let photo of cols">
-      <mp-photo
-      [url]="photo.url"
-      [description]="photo.description">
-    </mp-photo>
-  </div>
-  </li>
+    <li class="row" *ngFor="let cols of rows">
+        <div class="col-4" *ngFor="let photo of cols">
+            <mp-photo [url]="photo.url" [description]="photo.description"> </mp-photo>
+        </div>
+    </li>
 </ol>
