@@ -3,9 +3,15 @@
 </p>
 
 <ol class="list-unstyled">
-    <li class="row" *ngFor="let cols of rows">
-        <div class="col-4" *ngFor="let photo of cols">
-            <mp-photo [url]="photo.url" [description]="photo.description"> </mp-photo>
+    <li class="row no gutters" *ngFor="let cols of rows">
+        <div class="col-4" *ngFor="let photo of cols" mpBrightOnHover color1="#f0f033">
+            <mp-card [title]="photo.description">
+                <mp-photo [url]="photo.url" [description]="photo.description"> </mp-photo>
+                <div class="text-center">
+                    <i class="fa fa-heart-o fa-1x m-2"></i>{{ photo.likes }}
+                    <i class="fa fa-comment-o fa-1x m-2"></i>{{ photo.comments }}
+                </div>
+            </mp-card>
         </div>
     </li>
 </ol>
