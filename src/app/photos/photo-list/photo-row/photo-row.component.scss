@@ -1,0 +1,12 @@
+.row {
+    margin: 20px 10vw;
+    i {
+        color: black;
+    }
+}
+
+@media (max-width: 1800px) {
+    .row {
+        margin: 20px 1vw;
+    }
+}
