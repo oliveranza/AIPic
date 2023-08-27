@@ -1,0 +1,75 @@
+<h4 class="text-center">Register to embrace a new world!</h4>
+<form [formGroup]="signupFrom" class="form mt-4">
+  <div class="form-group mt-2">
+    <input
+      formControlName="email"
+      class="form-control"
+      placeholder="Email"
+      autofocus />
+    <mp-vmessage
+      [errors]="signupFrom.get('email').errors"
+      [validators]="[
+        { validator: 'required', msg: 'Email is required' },
+        { validator: 'email', msg: 'Invalid e-mail' }
+      ]">
+    </mp-vmessage>
+  </div>
+  <div class="form-group mt-2">
+    <input
+      formControlName="fullname"
+      class="form-control"
+      placeholder="Fullname"
+      autofocus />
+    <mp-vmessage
+      [errors]="signupFrom.get('fullname').errors"
+      [validators]="[
+        { validator: 'required', msg: 'fullname is required' },
+        { validator: 'minlength', msg: 'Minimum length is 2' },
+        { validator: 'maxlength', msg: 'Maximum length is 40' }
+      ]">
+    </mp-vmessage>
+  </div>
+  <div class="form-group mt-2">
+    <input
+      formControlName="username"
+      class="form-control"
+      placeholder="Username"
+      autofocus />
+    <mp-vmessage
+      [errors]="signupFrom.get('username').errors"
+      [validators]="[
+        { validator: 'required', msg: 'username required' },
+        { validator: 'minlength', msg: 'Minimum length is 2' },
+        { validator: 'maxlength', msg: 'Maximum length is 30' },
+        { validator: 'lowercase', msg: 'must be lowercase' },
+        { validator: 'usernameTaken', msg: 'username taken' }
+      ]">
+    </mp-vmessage>
+    <small *ngIf="signupFrom.get('username').valid" class="text-success">
+      Username avaliable
+    </small>
+  </div>
+  <div class="form-group mt-2">
+    <input
+      formControlName="password"
+      type="password"
+      class="form-control"
+      placeholder="Password"
+      autofocus />
+    <mp-vmessage
+      [errors]="signupFrom.get('password').errors"
+      [validators]="[
+        { validator: 'required', msg: 'password is required' },
+        { validator: 'minlength', msg: 'Minimum length is 6' },
+        { validator: 'maxlength', msg: 'Maximum length is 14' }
+      ]">
+    </mp-vmessage>
+  </div>
+  <button
+    [disabled]="signupFrom.invalid || signupFrom.pending"
+    class="btn btn-primary mt-2 form-control">
+    Register
+  </button>
+
+  <p>Already a user? <a [routerLink]="['']">Sign in!</a></p>
+</form>

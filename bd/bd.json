@@ -3,7 +3,7 @@
     {
       "id": "1",
       "username": "oliveranza",
-      "Nome": "Oliver",
+      "nome": "Oliver",
       "sobrenome": "Ranza",
       "email": "oliverzanza@gmail.com",
       "senha": "123456"
@@ -11,7 +11,7 @@
     {
       "id": "2",
       "username": "sylvaneide",
-      "Nome": "Maria",
+      "nome": "Maria",
       "sobrenome": "Silvaneide",
       "email": "sylvaneidea@gmail.com",
       "senha": "123456"

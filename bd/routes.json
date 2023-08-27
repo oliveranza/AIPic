@@ -1,4 +1,5 @@
 {
+  "/user/login/:username/:password": "/users?username=:username&senha=:password",
   "/all/photos":"/photos",
   "/all/photos?page=:page":"/photos?_page=:page&_limit=3",
   "/users/:id/photos":"/photos?userId=:id",

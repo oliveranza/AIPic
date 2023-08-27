@@ -8,6 +8,7 @@ import { iPhoto } from '../../photo/iPhoto.interface';
 })
 export class PhotoRowComponent implements OnChanges {
   @Input() photos: iPhoto[] = [];
+  @Input() searchText: string ='';
   rows: iPhoto[][] = [];
 
   constructor() {}

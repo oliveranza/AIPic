@@ -1,12 +1,22 @@
 .row {
-    margin: 20px 10vw;
-    i {
-        color: black;
-    }
+  i {
+    color: black;
+  }
+}
+
+.list-unstyled{
+  max-width: 900px;
+  margin: auto;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 1800px) {
-    .row {
-        margin: 20px 1vw;
-    }
+  .row {
+    margin: 20px 1vw;
+  }
 }

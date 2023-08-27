@@ -1,6 +1,11 @@
-<mp-search-bar (onTypeSearch)="filterText = $event" [value]="filterText"></mp-search-bar>
+<mp-search-bar
+  (onTypeSearch)="filterText = $event"
+  [value]="filterText">
+</mp-search-bar>
 
-<mp-photo-row class="no gutters" [photos]="photosList | FilterByDescription : filterText">
+<mp-photo-row
+  class="no gutters"
+  [photos]="photosList | FilterByDescription : filterText">
 </mp-photo-row>
 
 <mp-load-button (click)="loadMore()" [hasMore]="hasMore"></mp-load-button>
